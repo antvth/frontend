@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style type="text/css">
+        header{
+          height: 750px;
+          background-color: rgb(234, 82, 5);  
+        }
+        nav {
+            height: 55px;
+            background-color: rgb(231, 225, 225);
+        }
+        .container>div>*{
+            height: 850px;
+            background-color: orange;
+        }
+        footer{
+            height: 50px;
+            background-color: rgb(231, 225, 225);
+        }
+        .img1{
+            height: 750px;
+            
+        }
+        .img2{
+            height: 160px;
+            width: 240px;
+        }
+        .img3{
+            height: 160px;
+            width: 480px; 
+        }
+    </style>
+</head>
+  <body>
+    <div class="container">
+      <header class="row">
+        <img src="Banner.png" alt="" img1>
+      </header>
+      <nav class="row"><center><h1>PHIẾU ĐĂNG KÝ HỌC</h1></center></nav>
+      <div class="row">
+        <form>
+            <fieldset disabled>
+              <legend>THÔNG TIN THÍ SINH</legend>
+
+                <div class="row">
+                        <div class="col-md-3">
+                            <label for="disabledTextInput" class="form-label">Họ và tên</label>
+                            <input type="text" id="disabledTextInput" class="form-control" placeholder="Họ và tên">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="disabledTextInput" class="form-label">Ngày sinh</label>
+                            <div class="col-8"><input type="text" id="disabledTextInput"  class="form-control" placeholder="DD/MM/YYYY"></div>                   
+                        </div>
+                        <div class="col-md-3">
+                            <label for="disabledTextInput" class="form-label">Giới tính</label>
+                            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                <option value="1">Nam</option>
+                                <option value="2">Nữ</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="disabledTextInput" class="form-label">Dân tộc</label>
+                            <input type="text" id="disabledTextInput" class="form-control" placeholder="Kinh">
+                        </div>
+                    </div>
+                
+                <div class="row">
+                        <div class="col-md-4">
+                            <label for="disabledTextInput" class="form-label">Số CCCD/Chứng minh nhân dân</label>
+                            <input type="text" id="disabledTextInput" class="col-8" placeholder="0123456789">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="disabledTextInput" class="form-label">Ngày cấp</label>
+                            <div class="col-6"><input type="text" id="disabledTextInput"  class="form-control" placeholder="DD/MM/YYYY"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="disabledTextInput" class="form-label">Nơi cấp</label>
+                            <input type="text" id="disabledTextInput" class="form-control" placeholder="Hà Nội">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p>Hộ khẩu thường trú (Điền thông tin đầy đủ như trong sổ hộ khẩu)</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                <option selected>Tỉnh/Thành phố</option>
+                                <option value="1">Hà Nội</option>
+                                <option value="2">Nam Định</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                <option selected>Quận/Huyện</option>
+                            </select>                   
+                        </div>
+                        <div class="col-md-3">
+                            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                <option selected>Xã Phường</option>
+                            </select>    
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" placeholder="Số nhà, đường, ngõ, xóm">
+                        </div>
+                    </div> 
+
+                <legend>THÔNG TIN NHẬN GIẤY BÁO KẾT QUẢ</LEgend>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="">Người nhận</label>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="">Địa chỉ nhận</label>
+                        </div>
+                    </div>
+                    <div class="row"> 
+                        <div class="col-md-4">
+                            <input class="form-check-input" type="checkbox" value="" >
+                            <label class="form-check-label" >
+                                Thí sinh
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-check-input" type="checkbox" value="" >
+                            <label class="form-check-label" >
+                                Địa chỉ hộ khẩu thường chú
+                            </label>
+                        </div>    
+                    </div>
+                    <div class="row"> 
+                        <div class="col-md-4">
+                            <input class="form-check-input" type="checkbox" value="" >
+                            <label class="form-check-label" >
+                                Phụ huynh, người bảo trợ
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Khác
+                            </label>
+                        </div>    
+                    </div>
+                <legend>TẢI LÊN GIẤY TỜ XÁC THỰC</LEgend>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label for="disabledTextInput" class="form-label">Ảnh CMT/CCCD mặt trước</label>
+                            <img src="anh/cccd-mt.png" id="disabledTextInput" alt="" class="img2">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="disabledTextInput" class="form-label">Ảnh CMT/CCCD mặt sau</label>
+                            <img src="anh/cccd-ms.png" id="disabledTextInput" alt="" class="img2">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="disabledTextInput" class="form-label">Bản sao công chứng Bằng tốt nghiệp THPT</label>
+                            <img src="anh/bang-tot-nghiep-thpt.png" id="disabledTextInput" alt="" class="img3">
+                        </div> 
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <button type="button" id="disabledTextInput" class="btn btn-light">Chọn tệp</button>
+                            <label for="">Không có tệp nào được chọn</label>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" id="disabledTextInput" class="btn btn-light">Chọn tệp</button>
+                            <label for="">Không có tệp nào được chọn</label>
+                        </div>
+                        <div class="col-md-6">
+                            <button type="button" id="disabledTextInput" class="btn btn-light">Chọn tệp</button>
+                            <label for="">Không có tệp nào được chọn</label>
+                        </div> 
+                    </div>
+                    <div class="col-md-12">
+                        <input class="form-check-input" type="checkbox" value="" >
+                        <label class="form-check-label" >
+                            Tôi xin cam đoan những lời khai của tôi trên phiếu đăng ký này là đúng sự thật. 
+                            Nếu sai tôi hoàn toàn chịu trách nhiệm và nhận xử lý theo Quy chế tuyển sinh cao đẳng hiện hành
+                        </label>
+                    </div>
+                    <div class="col-md-12">
+                        <input class="form-check-input" type="checkbox" value="" >
+                        <label class="form-check-label" >
+                            Tôi đã đọc kỹ và cam kết tuân thủ Quy định tài chính của nhà trường
+                        </label>
+                    </div>   
+
+                <Center>
+                    <button type="submit" class="btn btn-primary"><h3>GỬI HỒ SƠ ĐĂNG KÍ</h3></button>
+                </Center>
+              
+            </fieldset>
+        </form>
+      </div>
+      <footer class="row"></footer>
+    </div>
+ </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</html>
