@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello angular</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script type="text/javascript" src="lab4.js"></script>
+    <style type="text/css">
+        .img {
+            max-width: 100px;
+            height: auto
+        }
+    </style>
+</head>
+
+
+<body ng-app="myapp">
+
+    <div ng-controller="laBController">
+        <table class="table table-bordered table-condensed">
+            <tr>
+                <th>Hình</th>
+                <th>họ và tên</th>
+                <th>ngày sinh</th>
+                <th>giới tính</th>
+                <th>điểm</th>
+            </tr>
+            <tr>
+                <td><img src="the-spectator-nicebleed.jpg" class="img"></td>
+                <td>{{info[0].ten}}</td>
+                <td>{{info[0].birthday}}</td>
+                <td>{{info[0].gender}}</td>
+                <td>{{info[0].mark}}</td>
+            </tr>
+            <tr>
+                <td><img src="lonely-man-standing-on-the-sea-under-tithi-luadthong.jpg" class="img"></td>
+                <td>{{info[1].ten}}</td>
+                <td>{{info[1].birthday}}</td>
+                <td>{{info[1].gender}}</td>
+                <td>{{info[1].mark}}</td>
+            </tr>
+            <tr>
+                <td><img src="sonork_outpost_by_tobiasroetsch_defrvqt-pre.jpg" class="img"></td>
+                <td>{{info[2].ten}}</td>
+                <td>{{info[2].birthday}}</td>
+                <td>{{info[2].gender}}</td>
+                <td>{{info[2].mark}}</td>
+            </tr>
+    </div>
+
+</body>
+
+</html>

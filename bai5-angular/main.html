@@ -33,12 +33,17 @@
         </table>
     </div>
     <div ng-controller="myinfoController">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">huhu</th>
-                    <th scope="col">{{huhu}}</th>
-                </tr>
+        {{huhu}}
+        <table border="1">
+            <tr>
+                <td>ten</td>
+                <td>tuoi</td>
+            </tr>
+            <tr ng-repeat="if in info">
+                <td>{{ if.ten }}</td>
+                <td>{{ if.tuoi }}</td>
+                <td><img src="photo/{{if.photo}}"></td>
+            </tr>
     </div>
 
 

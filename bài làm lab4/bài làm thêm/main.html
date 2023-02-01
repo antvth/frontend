@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello angular</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script type="text/javascript" src="add.js"></script>
+</head>
+
+<body ng-app="myapp">
+    <div ng-controller="sanPhamController">
+        <h1>{{ welcome }}</h1>
+        <table border="1">
+            <tr>
+                <td>tenSP</td>
+                <td>Gia</td>
+                <td>mau</td>
+                <td>KM</td>
+            </tr>
+            <tr ng-repeat="if in info">
+                <td>{{if.tenSP}}</td>
+                <td>{{if.Gia}}</td>
+                <td>{{if.mau}}</td>
+                <td>{{if.KM}}</td>
+            </tr>
+    </div>
+
+</body>
+
+</html>
