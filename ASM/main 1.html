@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#"><img src="logo-bas-big.webp" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row"><img src="thumbnail-facebook.jpg" alt=""></div>
+
+        <!-- <h2>
+            <p class="text-primary">Chặng bay phố biến của hãng</p>
+        </h2>
+
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="inputState" class="form-label"></label>
+                <select id="inputState" class="form-select">
+                    <option selected>Điểm Đi </option>
+                    <option>Hà Nội</option>
+                </select>
+            </div>
+
+            <div class="col-md-6">
+                <label for="inputState" class="form-label"></label>
+                <select id="inputState" class="form-select">
+                    <option selected>Điểm Đến </option>
+                    <option>Hà Nội </option>
+                </select>
+            </div>
+        </div> -->
+
+
+        <h2 style="padding-top: 20px;">
+
+            <p class="text-primary">Đặt Vé</p>
+        </h2>
+        <hr>
+
+        <div class="row">
+
+        </div>
+
+        <table class="table" border="1">
+            <thead>
+                <tr>
+                    <th scope="col">Họ và Tên</th>
+                    <th scope="col"><input type="email" class="form-control"></th>
+                </tr>
+                <tr>
+                    <th scope="col">Chứng minh thư</th>
+                    <th scope="col"><input type="email" class="form-control"></th>
+                </tr>
+                <tr>
+                    <th scope="col">Email</th>
+                    <th scope="col"><input type="email" class="form-control"></th>
+                </tr>
+                <tr>
+                    <th scope="col">Gioi tính</th>
+                    <th scope="col">
+                        <select class="form-select" aria-label="Default select example">
+                            <option value="1">Nam</option>
+                            <option value="2">nữ</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th scope="col">Số điện thoại</th>
+                    <th scope="col"><input type="email" class="form-control"></th>
+                </tr>
+                <tr>
+                    <th scope="col">Chọn chuyến bay</th>
+                    <th scope="col">
+                        <select class="form-select" aria-label="Default select example">
+                            <option value="1">Chọn</option>
+                            <option value="2">12h</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th scope="col">Ngày sinh</th>
+                    <th scope="col"><input type="date" class="form-control" id="date"></th>
+                </tr>
+                <tr>
+                    <th scope="col">Hành lý</th>
+                    <th scope="col"><input type="email" class="form-control"></th>
+                </tr>
+                <tr>
+                    <th scope="col">Hình thức thanh toán</th>
+                    <th scope="col">
+                        <select class="form-select" aria-label="Default select example">
+                            <option value="1">Chọn</option>
+                            <option value="2">chuyển khoản</option>
+                        </select>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+
+        <div class="row" style="margin: 20px 0 20px 0;">
+            <div class="col-md-4 col-sm-6">
+                <button type="button" class="btn btn-dark">Reset</button>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <button type="button" class="btn btn-dark"> ĐĂNG KÝ</button>
+            </div>
+        </div>
+
+        <div class="container ">
+            <div class="row ">
+                <div class="col" style="margin: 20px 0 20px 0; font-size: 10pt;">
+                    <p class="fw-bolder"> BAMBOO AIRWAYS</p>
+
+
+                    Nơi đăng ký kinh doanh: Khu số 4, khu du lịch biển Nhơn Lý – Cát Tiên, xã Nhơn Lý, thành phố Quy
+                    Nhơn, tỉnh Bình Định, Việt Nam.
+                    <br>
+                    Trụ sở chính: Tầng 22, Tòa nhà Bamboo Airways Tower, 265 Cầu Giấy, Phường Dịch Vọng, Quận Cầu Giấy,
+                    Hà Nội.
+                    <br>
+
+                    Số điện thoại: +84 02432333233 – Email: info@bambooairways.com
+                    <br>
+
+                    Chi nhánh TP Hồ Chí Minh: Tầng 1, tầng 4 – Toà nhà Nova College, 130-132 Hồng Hà, Phường 9, Q.Phú
+                    Nhuận, TP. Hồ Chí Minh.
+                    <br>
+
+                    Đại diện tại Anh: 3 World Business Centre, Newall Road, London Heathrow Airport, TW6 2TA – Tel:
+                    +44844 482 2360
+                    <br>
+
+                    Tổng đài chăm sóc khách hàng: +84 1900 1166 hoặc 033 828 2525 – Email: 19001166@bambooairways.com
+                    <br>
+                    Tổng đài chăm sóc Hội viên & Khách hàng doanh nghiệp: +84 1900 1133
+                </div>
+                <div class="col" style="font-size: 10pt;">
+                    Đây là website chính thức của Bamboo Airways, nghiêm cấm mọi cá nhân/ tổ chức sao chép và sử dụng
+                    thông tin mà chưa có sự cho phép của Bamboo Airways. Điều khoản sử dụng Website tại đây.
+
+                    <p class="fw-bolder">Quét mã QR để cài ứng dụng:</p>
+                    <img src="qr-android-ios.webp" alt="">
+
+
+                </div>
+                <div class="col" style="font-size: 11pt;">
+
+                    <p class="fw-bolder">Mã số doanh nghiệp:</p>
+                    Mã số doanh nghiệp 0107867370, được cấp bởi Phòng Đăng ký kinh doanh, Sở Kế hoạch và Đầu tư tỉnh
+                    Bình Định, Việt Nam, ngày 31 tháng 5 năm 2017.
+                    <img src="logoSaleNoti.png" alt="" class="anh1">
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+</html>
