@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body ng-app="myapp">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a href=""><img src="logo-bas-big.webp" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="datve.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="main 1.html">Book tickets</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="gioithieu.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            contact me
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="lienhe.html">contact</a></li>
+                            <li><a class="dropdown-item" href="#"></a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container">
+        <div class="row"><img src="thumbnail-facebook.jpg" alt="" style="margin-top: 20px;"></div>
+
+
+
+        <div ng-controller="laBController" style="margin-top: 10px;">
+            <img src=" the-spectator-nicebleed.jpg" alt="">
+            <ul>
+                <h1 style="padding-top: 20px;">
+                    <p class="text-primary">{{lienhe}}</p>
+                </h1>
+                <h2>
+                    <p class="text-primary">{{viet}}</p>
+                </h2>
+                <div class="p-3 mb-2 bg-white ">
+                    <p class="fw-bolder">{{Tong}}</p>
+
+                    • Điện thoại: {{dien}}
+                    <br>
+                    • Email: {{email}}
+                    <br>
+                    Tổng đài chăm sóc hội viên và khách hàng doanh nghiệp
+                    <br>
+                    • Điện thoại:{{dien2}}
+                    <hr>
+                    <p class="fw-bolder">Phòng vé tại Hà Nội</p>
+                    <p class="fw-bolder">Điện thoại: +84 024 3233 3233 nhánh 1905-1906-1907 –
+                        Email:cto.han@bambooairways.com
+                    </p>
+
+
+                    Phòng vé Cầu Giấy
+                    <br>
+
+                    • Địa chỉ: Tầng 1, Tòa nhà Bamboo Airways Tower, 265 Cầu Giấy, Phường Dịch Vọng, Quận Cầu Giấy, Hà
+                    Nội
+                    <br>
+                    • Thời gian mở cửa: Từ 08h00 đến 18h00 tất cả các ngày
+                    <br>
+                    Phòng vé sân bay Nội Bài
+                    <br>
+
+                    • Tầng 2, Sảnh A, Nhà ga T1, Sân bay Quốc tế Nội Bài, Phú Minh, Sóc Sơn, Hà Nội
+                    <hr>
+                    <p class="fw-bolder"> Phòng vé tại TP Hồ Chí Minh:</p>
+                    <p class="fw-bolder"> Điện thoại: +84 0963 840 549 – Email:cto.sgn@bambooairways.com</p>
+
+
+
+                    • Tầng 1, tầng 4 – Toà nhà Nova College, 130-132 Hồng Hà, Phường 9, Q.Phú Nhuận, TP. Hồ Chí Minh.
+                    <br>
+                    • Phòng vé tại sân bay Tân Sơn Nhất: cửa D3, Ga Quốc Nội, Sân Bay Tân Sơn Nhất.
+                    <br>
+                    Thời gian mở cửa: 8h-18h từ thứ 2 – thứ 6 và 8h30-17h thứ 7 – chủ nhật
+                </div>
+            </ul>
+        </div>
+
+
+        <hr>
+        <div class="p-3 mb-2 bg-primary text-white">Theo dõi tin tức từ Bamboo Airways
+            <img src="1200-900-Facebook.jpg" alt="" class="anh3">
+            <img src="tải xuống.jfif" alt="" class="anh3">
+        </div>
+
+        <div class="container ">
+            <div class="row ">
+                <div class="col" style="margin: 20px 0 20px 0; font-size: 10pt;">
+                    <p class="fw-bolder"> BAMBOO AIRWAYS</p>
+
+
+                    Nơi đăng ký kinh doanh: Khu số 4, khu du lịch biển Nhơn Lý – Cát Tiên, xã Nhơn Lý, thành phố Quy
+                    Nhơn, tỉnh Bình Định, Việt Nam.
+                    <br>
+                    Trụ sở chính: Tầng 22, Tòa nhà Bamboo Airways Tower, 265 Cầu Giấy, Phường Dịch Vọng, Quận Cầu Giấy,
+                    Hà Nội.
+                    <br>
+
+                    Số điện thoại: +84 02432333233 – Email: info@bambooairways.com
+                    <br>
+
+                    Chi nhánh TP Hồ Chí Minh: Tầng 1, tầng 4 – Toà nhà Nova College, 130-132 Hồng Hà, Phường 9, Q.Phú
+                    Nhuận, TP. Hồ Chí Minh.
+                    <br>
+
+                    Đại diện tại Anh: 3 World Business Centre, Newall Road, London Heathrow Airport, TW6 2TA – Tel:
+                    +44844 482 2360
+                    <br>
+
+                    Tổng đài chăm sóc khách hàng: +84 1900 1166 hoặc 033 828 2525 – Email: 19001166@bambooairways.com
+                    <br>
+                    Tổng đài chăm sóc Hội viên & Khách hàng doanh nghiệp: +84 1900 1133
+                </div>
+                <div class="col" style="font-size: 10pt;">
+                    Đây là website chính thức của Bamboo Airways, nghiêm cấm mọi cá nhân/ tổ chức sao chép và sử dụng
+                    thông tin mà chưa có sự cho phép của Bamboo Airways. Điều khoản sử dụng Website tại đây.
+
+                    <p class="fw-bolder">Quét mã QR để cài ứng dụng:</p>
+                    <img src="qr-android-ios.webp" alt="">
+
+
+                </div>
+                <div class="col" style="font-size: 11pt;">
+
+                    <p class="fw-bolder">Mã số doanh nghiệp:</p>
+                    Mã số doanh nghiệp 0107867370, được cấp bởi Phòng Đăng ký kinh doanh, Sở Kế hoạch và Đầu tư tỉnh
+                    Bình Định, Việt Nam, ngày 31 tháng 5 năm 2017.
+                    <img src="logoSaleNoti.png" alt="" class="anh1">
+                </div>
+            </div>
+        </div>
+        <div class="p-3 mb-2 bg-white text-white2" style="margin-bottom: 20px ;">@ 2018 Bamboo Airways
+            Copyright. All
+            Rights Reserved.
+        </div>
+    </div>
+
+
+</body>
+
+</html>

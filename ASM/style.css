@@ -1,5 +1,9 @@
-   h1 {
+   h2 {
        text-align: center;
+   }
+
+   .card-body {
+       text-align: left;
    }
 
    .img1 {
@@ -20,4 +24,17 @@
    .anh1 {
        height: 68px;
        width: 160px;
+   }
+
+   .anh3 {
+       height: 29px;
+       width: 20px;
+   }
+
+   .text-white {
+       text-align: center;
+   }
+
+   .text-white2 {
+       text-align: center;
    }
